@@ -1,0 +1,5 @@
+module clkbuffer(mclk,bclk );
+input mclk;
+output bclk;
+buf b1(bclk,mclk);//buf is a primitive
+endmodule
