@@ -1,0 +1,18 @@
+module decoder_tb();
+reg [1:0]a;
+wire [3:0]b;
+integer i;
+decoder add(.a(a),.b(b));
+initial 
+begin
+a=0;
+end
+initial
+begin
+for(i=0;i<=3;i=i+1)
+begin
+a=i;
+#50;
+end 
+end 
+endmodule
